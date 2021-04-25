@@ -8,7 +8,8 @@ public class Citta {
 	private String nome;
 	private List<Rilevamento> rilevamenti;
 	private int counter = 0;
-	
+	double umiditaMedia = 0;
+	List<Rilevamento> rilevamentiPerCitta;
 	
 	
 	public Citta(String nome) {
@@ -35,6 +36,13 @@ public class Citta {
 	public void setRilevamenti(List<Rilevamento> rilevamenti) {
 		this.rilevamenti = rilevamenti;
 	}
+	
+	public List<Rilevamento> getRilevamentiPerCitta() {
+		return rilevamentiPerCitta;
+	}
+	public void setRilevamentiPerCitta(List<Rilevamento> rilevamentiCitta) {
+		this.rilevamentiPerCitta = rilevamentiCitta;
+	}
 
 	public int getCounter() {
 		return counter;
@@ -42,6 +50,25 @@ public class Citta {
 
 	public void setCounter(int counter) {
 		this.counter = counter;
+	}
+	
+
+	public int getGiorniConsecutivi() {
+		return counter;
+	}
+
+	public void setGiorniConsecutivi(int count) {
+		this.counter = counter;
+	}
+	
+	
+	public double getUmiditaMedia() {
+		return umiditaMedia;
+	}
+	
+
+	public void setUmiditaMedia(double uMedia) {
+		this.umiditaMedia = uMedia;
 	}
 	
 	public void increaseCounter() {
